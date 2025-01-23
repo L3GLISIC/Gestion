@@ -79,7 +79,8 @@ namespace Gestion.View
                 a.Surface = surface;
                 a.NombrePiece = nbrPiece;
                 a.Capacite = capacite;
-                a.IdProprietaire = proprietaire.IdPersonne;
+                a.IdProprietaire = (int)cbProprietaire.SelectedValue;
+
 
                 db.appartements.Add(a);
                 db.SaveChanges();
